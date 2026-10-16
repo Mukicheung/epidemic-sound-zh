@@ -1,0 +1,23 @@
+name: 漏译或译法建议
+description: 帮助补全音乐语境中的中文表达
+title: "[翻译] "
+labels: [translation]
+body:
+  - type: input
+    id: original
+    attributes:
+      label: 英文原词或句子
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 在哪里看到的？
+      description: 页面类型、操作步骤；不要粘贴账号信息或带私人参数的链接。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议译法
+      description: 可以留空。欢迎解释你理解的音乐语境。

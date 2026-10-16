@@ -1,0 +1,18 @@
+name: 页面或功能问题
+description: 报告错位、漏译、开关或兼容性问题
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 浏览器版本、脚本版本、油猴或扩展版。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与实际结果
+      description: 切回英文后是否恢复？截图请遮掉账号信息。
+    validations:
+      required: true

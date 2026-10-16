@@ -1,0 +1,29 @@
+{
+  "name": "epidemic-sound-zh",
+  "version": "0.1.3",
+  "description": "Epidemic Sound 原位中文辅助脚本与扩展",
+  "main": "epidemic-zh.user.js",
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node --check epidemic-zh.user.js && node --check extension/content.js && node test.cjs"
+  },
+  "keywords": [
+    "epidemic-sound",
+    "userscript",
+    "tampermonkey",
+    "chinese",
+    "localization"
+  ],
+  "author": "tainanzhui",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "jsdom": "^30.1.3"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tainanzhui/epidemic-sound-zh.git"
+  },
+  "homepage": "https://github.com/tainanzhui/epidemic-sound-zh"
+}

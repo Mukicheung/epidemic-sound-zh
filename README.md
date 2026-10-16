@@ -2,13 +2,13 @@
 
 **选音乐时，把注意力留给声音。**
 
-[![CI](https://github.com/tainanzhui/epidemic-sound-zh/actions/workflows/ci.yml/badge.svg)](https://github.com/tainanzhui/epidemic-sound-zh/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/tainanzhui/epidemic-sound-zh)](https://github.com/tainanzhui/epidemic-sound-zh/releases)
+[![CI](https://github.com/MukiCheung/epidemic-sound-zh/actions/workflows/ci.yml/badge.svg)](https://github.com/MukiCheung/epidemic-sound-zh/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/tainanzhui/epidemic-sound-zh)](https://github.com/MukiCheung/epidemic-sound-zh/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 一个为中文创作者做的 Epidemic Sound 汉化小工具。菜单、情绪、曲风和常用操作在原位置显示中文，保留网站原来的排版和点击逻辑。
 
-[安装油猴脚本](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [下载 Chrome 扩展](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip) · [反馈漏译](https://github.com/tainanzhui/epidemic-sound-zh/issues/new/choose) · [English](README.en.md)
+[安装油猴脚本](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [下载 Chrome 扩展](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip) · [反馈漏译](https://github.com/MukiCheung/epidemic-sound-zh/issues/new/choose) · [English](README.en.md)
 
 ![中英文术语对照示意，不是网站截图](docs/overview.svg)
 
@@ -36,14 +36,14 @@
 ### 推荐：油猴脚本
 
 1. 浏览器安装 [Tampermonkey](https://www.tampermonkey.net/)。
-2. 点击 **[安装 Epidemic Sound 原生中文](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js)**，在油猴页面确认安装。
+2. 点击 **[安装 Epidemic Sound 原生中文](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js)**，在油猴页面确认安装。
 3. 打开或刷新 [Epidemic Sound](https://www.epidemicsound.com/music/featured/)。
 
 如果链接只下载了文件：打开油猴管理面板 → 实用工具 → 从文件导入，选择 `.user.js`。若脚本没有运行，请按油猴提示启用浏览器的用户脚本支持。
 
 ### Chrome / Edge 扩展版
 
-1. [下载扩展 ZIP](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip)，解压到固定文件夹。
+1. [下载扩展 ZIP](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip)，解压到固定文件夹。
 2. 打开 `chrome://extensions`（Edge：`edge://extensions`），启用开发者模式。
 3. 点击「加载已解压的扩展程序」，选择含 `manifest.json` 的文件夹。
 4. 刷新 Epidemic Sound。
@@ -58,7 +58,7 @@
 - 搜索框输入不会自动中英转换；你的输入仍按原样交给网站。
 - CSS 生成的中文可能与英文一起进入无障碍名称，读屏软件可能重复朗读。
 - 目前每次打开页面默认开启中文；开关状态不跨刷新保存。
-- 网站结构变化可能造成漏译或排版问题。可先切回英文，再[提交问题](https://github.com/tainanzhui/epidemic-sound-zh/issues/new/choose)。
+- 网站结构变化可能造成漏译或排版问题。可先切回英文，再[提交问题](https://github.com/MukiCheung/epidemic-sound-zh/issues/new/choose)。
 
 实站已观察到中文导航、筛选栏及下载窗口正常显示，英文筛选参数保持原样。测试覆盖原文、链接、表单值、动态节点复用和开关恢复。**完整下载文件落盘、全部筛选组合及扩展版独立加载尚未完成验收。** 详见 [验证说明](docs/verification.md)。
 
@@ -87,6 +87,6 @@ npm test
 
 ## 关于
 
-由 [tainanzhui](https://github.com/tainanzhui) 维护。从日常创作遇到的问题出发，做一些能直接用的小工具。
+由 [tainanzhui](https://github.com/MukiCheung) 维护。从日常创作遇到的问题出发，做一些能直接用的小工具。
 
 本项目与 Epidemic Sound 无隶属关系；不提供音乐资源，不改变订阅或授权要求。代码采用 [MIT License](LICENSE)。

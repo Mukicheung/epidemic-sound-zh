@@ -5,10 +5,10 @@
 // @description  本地人工词典，原位中文排版，保留底层英文与站点操作逻辑。
 // @author       tainanzhui
 // @license      MIT
-// @homepageURL  https://github.com/tainanzhui/epidemic-sound-zh
-// @supportURL   https://github.com/tainanzhui/epidemic-sound-zh/issues
-// @downloadURL  https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js
-// @updateURL    https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js
+// @homepageURL  https://github.com/MukiCheung/epidemic-sound-zh
+// @supportURL   https://github.com/MukiCheung/epidemic-sound-zh/issues
+// @downloadURL  https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js
+// @updateURL    https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js
 // @match        https://www.epidemicsound.com/*
 // @run-at       document-idle
 // @grant        none

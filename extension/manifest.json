@@ -3,7 +3,7 @@
   "name": "Epidemic Sound 原生中文",
   "version": "0.1.3",
   "description": "本地人工词典，保留英文数据的原位中文界面。",
-  "homepage_url": "https://github.com/tainanzhui/epidemic-sound-zh",
+  "homepage_url": "https://github.com/MukiCheung/epidemic-sound-zh",
   "content_scripts": [
     {
       "matches": [

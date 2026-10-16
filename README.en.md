@@ -2,7 +2,7 @@
 
 A small localization tool for Chinese-speaking creators who use Epidemic Sound. It displays reviewed Chinese labels in the original layout while preserving underlying English text, links and form values.
 
-[中文说明](README.md) · [Install userscript](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [Download extension](https://github.com/tainanzhui/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip)
+[中文说明](README.md) · [Install userscript](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [Download extension](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip)
 
 ## Features
 
@@ -36,4 +36,4 @@ npm test
 
 Edit `dictionary.json` to contribute translations. Both distributions share `runtime.js`. Please include the original phrase, context and suggested translation in an issue or pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Maintained by [tainanzhui](https://github.com/tainanzhui). Unofficial and not affiliated with Epidemic Sound. This tool does not provide music or change the service's subscription or licensing requirements. [MIT licensed](LICENSE).
+Maintained by [tainanzhui](https://github.com/MukiCheung). Unofficial and not affiliated with Epidemic Sound. This tool does not provide music or change the service's subscription or licensing requirements. [MIT licensed](LICENSE).

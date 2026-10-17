@@ -1,24 +1,28 @@
+<div align="center">
+
 # Epidemic Sound 原生中文
 
-**选音乐时，把注意力留给声音。**
+在原来的界面里，用中文查看情绪、曲风和常用操作。
+
+**简体中文** · [English](README.en.md)
+
+[安装油猴脚本](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [下载浏览器扩展](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip) · [更新记录](CHANGELOG.md) · [反馈问题](https://github.com/MukiCheung/epidemic-sound-zh/issues/new/choose)
 
 [![CI](https://github.com/MukiCheung/epidemic-sound-zh/actions/workflows/ci.yml/badge.svg)](https://github.com/MukiCheung/epidemic-sound-zh/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/tainanzhui/epidemic-sound-zh)](https://github.com/MukiCheung/epidemic-sound-zh/releases)
+[![Release](https://img.shields.io/github/v/release/MukiCheung/epidemic-sound-zh)](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
-一个为中文创作者做的 Epidemic Sound 汉化小工具。菜单、情绪、曲风和常用操作在原位置显示中文，保留网站原来的排版和点击逻辑。
-
-[安装油猴脚本](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh.user.js) · [下载 Chrome 扩展](https://github.com/MukiCheung/epidemic-sound-zh/releases/latest/download/epidemic-zh-extension.zip) · [反馈漏译](https://github.com/MukiCheung/epidemic-sound-zh/issues/new/choose) · [English](README.en.md)
 
 ![中英文术语对照示意，不是网站截图](docs/overview.svg)
 
-## 为什么做这个
+<sub>术语对照示意；不是网站实拍截图。</sub>
 
-剪视频时，我经常在 Epidemic Sound 里找配乐。音乐很好，但那些英文情绪和曲风标签，让“找感觉”变成了“查单词”。
+</div>
 
-直接翻译整页又让我担心误改网页参与交互的文字。所以做了这个工具：用人工整理的词典，在原位置显示中文，底层英文文本、链接和表单值仍然保留。
+[功能](#现在能做什么) · [安装](#安装) · [覆盖范围](#覆盖范围与已知限制) · [常见问题](#常见问题) · [开发](#本地开发)
 
-它从一个自己的小需求开始，也欢迎其他创作者一起把译法补得更准确。
+## 关于项目
+
+这是一个基于本地词典的 Epidemic Sound 中文界面工具。菜单、情绪、曲风和常用操作在原位置显示中文，保留原英文文本、链接和表单值。提供油猴脚本和 Chrome / Edge 扩展两种安装方式。
 
 ## 现在能做什么
 
@@ -31,7 +35,21 @@
 
 脚本本身不调用翻译 API，不发送页面文本，也不读取 Cookie。油猴管理器会按自身设置从 GitHub 检查更新；网站自己的请求照常运行。
 
+## 术语示例
+
+| 原文 | 中文显示 | 使用位置 |
+| --- | --- | --- |
+| Laid Back | 松弛悠闲 | 情绪标签 |
+| Restless | 躁动不安 | 情绪标签 |
+| Stems | 分轨音频 | 下载相关操作 |
+
 ## 安装
+
+| 方式 | 适合谁 | 更新方式 |
+| --- | --- | --- |
+| 油猴脚本（推荐） | 已使用或愿意安装 Tampermonkey 的用户 | 由脚本管理器按设置检查更新 |
+| Chrome / Edge 扩展 | 希望使用独立扩展的用户 | 下载新版、替换文件并重新加载 |
+
 
 ### 推荐：油猴脚本
 
@@ -62,6 +80,36 @@
 
 实站已观察到中文导航、筛选栏及下载窗口正常显示，英文筛选参数保持原样。测试覆盖原文、链接、表单值、动态节点复用和开关恢复。**完整下载文件落盘、全部筛选组合及扩展版独立加载尚未完成验收。** 详见 [验证说明](docs/verification.md)。
 
+## 常见问题
+
+<details>
+<summary><strong>会翻译歌名和搜索词吗？</strong></summary>
+
+不会。歌名、艺人名保持原文，搜索框里的内容也按你的输入提交。
+
+</details>
+
+<details>
+<summary><strong>需要翻译 API 或额外账号吗？</strong></summary>
+
+不需要。翻译来自随脚本发布的本地词典。Epidemic Sound 本身的登录、订阅和音乐授权要求不变。
+
+</details>
+
+<details>
+<summary><strong>装好了却没有中文，怎么排查？</strong></summary>
+
+确认脚本或扩展已启用，刷新 Epidemic Sound；油猴用户检查浏览器是否允许用户脚本运行。不要同时启用两个版本。个别词没有变化，可能尚未收录，可在反馈中附上英文原词和页面位置。
+
+</details>
+
+<details>
+<summary><strong>怎么恢复英文？</strong></summary>
+
+点击右下角开关，或按 `Alt + Shift + C`（Mac：`Option + Shift + C`）。要完全停用，禁用脚本或扩展后刷新网页。
+
+</details>
+
 ## 一起补全它
 
 遇到漏译或译法不自然，欢迎提交 Issue：**页面位置 + 英文原词 + 建议中文**。可以附局部截图，请遮掉账号和个人信息。
@@ -87,6 +135,6 @@ npm test
 
 ## 关于
 
-由 [tainanzhui](https://github.com/MukiCheung) 维护。从日常创作遇到的问题出发，做一些能直接用的小工具。
+由 [Muki Cheung](https://github.com/MukiCheung) 维护。
 
 本项目与 Epidemic Sound 无隶属关系；不提供音乐资源，不改变订阅或授权要求。代码采用 [MIT License](LICENSE)。

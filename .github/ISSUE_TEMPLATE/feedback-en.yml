@@ -1,0 +1,33 @@
+name: Bug or translation feedback (English)
+description: Report a display issue, missing phrase or translation correction
+title: "[Feedback] "
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feedback type
+      options:
+        - Missing or incorrect translation
+        - Layout or interaction issue
+        - Installation issue
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, tool version and installation method
+      placeholder: Chrome, v0.1.3, Tampermonkey / extension
+  - type: input
+    id: page
+    attributes:
+      label: Page or location
+      description: Use a public page URL or description; omit account details and direct music download URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: For translations, include the English phrase and suggested Chinese. For bugs, include steps and expected/actual results. Remove personal details from screenshots.
+    validations:
+      required: true

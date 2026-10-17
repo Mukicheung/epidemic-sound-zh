@@ -18,3 +18,25 @@
 ## 版本发布
 
 维护者修改 `package.json` 与锁文件中的版本，运行构建和测试；创建 Git tag 与 GitHub Release，并上传 `epidemic-zh.user.js`、`epidemic-zh-extension.zip`。仅发布已检查的文件，发行说明列出已验证行为和剩余缺口。
+
+
+---
+
+# Contributing
+
+## Translation changes
+
+1. Include the English phrase and its page context. Musical context matters.
+2. Edit `dictionary.json`, not the generated userscript or `extension/content.js`.
+3. Keep track titles, artist names and product names unchanged. Prefer clear, idiomatic Chinese for musical moods.
+4. Run `npm ci`, `npm run build` and `npm test`. Commit the dictionary and generated outputs together.
+
+## Runtime changes
+
+Preserve original text nodes, form values, URLs and request data. Tests should cover actual compatibility constraints: English text read by click handlers, reused dynamic nodes and restored styles.
+
+For layout changes, include a test page or a cropped screenshot with personal information removed. Do not submit cookies, tokens, music files, private account details or direct music download URLs.
+
+## Releases
+
+Maintainers update the version in `package.json` and the lockfile, build and test, then create a Git tag and GitHub Release with the userscript and extension ZIP. Release notes should distinguish verified behavior from outstanding checks.
